@@ -1,0 +1,31 @@
+version: '3'
+
+x-build-backend: &build_backend_env
+  build:
+    context: .
+    dockerfile: Dockerfile
+    target: dev
+  volumes:
+    - .:/opt/score_bel
+  env_file:
+    - variables/web.env
+  depends_on:
+    - db
+
+services:
+  db:
+    image: postgres:16.0
+    container_name: score-bel-db
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    expose:
+      - 5432
+    env_file:
+      - variables/db.env
+
+  web:
+    <<: *build_backend_env
+    container_name: score-bel-web
+    command: bash -c "python manage.py wait_for_db && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
