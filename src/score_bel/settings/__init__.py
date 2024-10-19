@@ -9,6 +9,7 @@ from .databases import *
 from .middlewares import *
 from .templates import *
 from .rest_framework import *
+from .drf_spectacular import *
 
 env = environ.Env()
 
