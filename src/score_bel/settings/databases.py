@@ -12,5 +12,8 @@ DATABASES = {
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'ieDmvMgTpPKcyZtFHmrtoiSFpnyGyDxM'),
         'HOST': os.environ.get('POSTGRES_HOST', 'junction.proxy.rlwy.net'),
         'PORT': os.environ.get('POSTGRES_PORT', '26459'),
+        'TEST': {
+            'NAME': 'test_score_bel_default',
+        },
     }
 }

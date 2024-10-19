@@ -8,6 +8,7 @@ from .auth_user import *
 from .databases import *
 from .middlewares import *
 from .templates import *
+from .rest_framework import *
 
 env = environ.Env()
 
