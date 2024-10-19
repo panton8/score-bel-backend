@@ -12,8 +12,8 @@ env = environ.Env()
 IS_SWAGGER_ENABLED = env.bool('IS_SWAGGER_ENABLED', default=True)
 
 SPECTACULAR_SETTINGS = {
-    'TITLE': 'Kapusta API',
-    'DESCRIPTION': 'Kapusta API documentation',
+    'TITLE': 'ScoreBel API',
+    'DESCRIPTION': 'ScoreBel API documentation',
     'VERSION': '0.0.1',
     'SCHEMA_PATH_PREFIX': r'/v[0-9]',
     'COMPONENT_SPLIT_REQUEST': True
