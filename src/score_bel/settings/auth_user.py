@@ -1,5 +1,3 @@
-from datetime import timedelta
-
 import environ
 
 env = environ.Env()
@@ -7,9 +5,10 @@ env = environ.Env()
 
 __all__ = (
     'AUTH_PASSWORD_VALIDATORS',
-
+    'AUTH_USER_MODEL',
 )
 
+AUTH_USER_MODEL = 'user.User'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
