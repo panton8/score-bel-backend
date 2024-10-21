@@ -55,6 +55,6 @@ STATIC_URL = 'staticfiles/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGIN_REGEXES = env.list('CORS_ALLOWED_ORIGIN_REGEXES',
-                                       default=[])
+                                       default=['http://localhost:3000'])
 
 APPEND_SLASH = env.bool('APPEND_SLASH', default=True)
