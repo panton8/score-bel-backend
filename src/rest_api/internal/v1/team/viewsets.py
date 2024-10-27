@@ -13,7 +13,7 @@ from team.services.team_manager import TeamManager
 
 
 class TournamentViewSet(GenericViewSet, ListModelMixin):
-    queryset = Tournament.objects.all()
+    queryset = Tournament.objects.all().order_by('ordering')
     serializer_class = TournamentSerializer
     permission_classes = (AllowAny,)
 
