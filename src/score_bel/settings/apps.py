@@ -16,4 +16,5 @@ INSTALLED_APPS = [
 
     'base',
     'user',
+    'team'
 ]
