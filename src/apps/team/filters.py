@@ -11,7 +11,7 @@ class MatchFilter(filters.FilterSet):
 
     class Meta:
         model = Match
-        fields = ('date', )
+        fields = ('date', 'tournament', 'full_time')
 
     def filter_date(self, qs, name, value):
         if not value:

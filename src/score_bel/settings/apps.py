@@ -16,5 +16,6 @@ INSTALLED_APPS = [
 
     'base',
     'user',
-    'team'
+    'team',
+    'player'
 ]

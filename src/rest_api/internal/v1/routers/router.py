@@ -5,6 +5,7 @@ from rest_api.internal.v1.user.viewsets.profile import ProfileViewSet
 from rest_api.internal.v1.user.viewsets.refresh_token import RefreshTokenViewSet
 from rest_api.internal.v1.user.viewsets.sign_up import SignUpViewSet
 from rest_api.internal.v1.user.viewsets.sign_in import SignInViewSet
+from rest_api.internal.v1.player.viewsets import PlayerViewSet
 
 router = routers.DefaultRouter()
 
@@ -16,3 +17,4 @@ router.register(r'user', ProfileViewSet, basename='user_profile')
 router.register(r'teams', TeamViewSet, basename='teams')
 router.register(r'tournaments', TournamentViewSet, basename='tournaments')
 router.register(r'matches', MatchViewSet, basename='matches')
+router.register(r'players', PlayerViewSet, basename='players')
