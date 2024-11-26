@@ -16,5 +16,5 @@ class StatisticsAdmin(admin.ModelAdmin):
 
 class MatchLineupInline(admin.TabularInline):
     model = LineUp
-    extra = 1
+    extra = 0
     autocomplete_fields = ['player']

@@ -6,13 +6,14 @@ from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
-from rest_api.internal.v1.player.serializers import LineUpSerializer
+from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySerializer
 from rest_api.internal.v1.team.serializers import TeamSerializer, TournamentSerializer, MatchSerializer
 from team.filters import MatchFilter
 from team.models import Team, Tournament, Match
 from rest_framework.permissions import AllowAny
 
 from team.services.line_up_manager import LineUpManager
+from team.services.summary_manager import SummaryManager
 from team.services.team_manager import TeamManager
 
 
@@ -61,6 +62,26 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
         data = {
             match.home_team.name: {'start': home_line_up_start_data, 'bench': home_line_up_bench_data},
             match.away_team.name: {'start': away_line_up_start_data, 'bench': away_line_up_bench_data},
+        }
+
+        return Response(data, status=status.HTTP_200_OK)
+
+    @extend_schema(
+        responses={200: OpenApiTypes.OBJECT},
+    )
+    @action(detail=True, methods=['GET'], serializer_class=SummarySerializer, url_path='summary')
+    def summary(self, request, *args, **kwargs):
+        match = self.get_object()
+        match_summary_manager = SummaryManager(match)
+        home_team_summary = match_summary_manager.get_home_team_summary()
+        away_team_summary = match_summary_manager.get_away_team_summary()
+
+        home_team_summary_data = self.get_serializer(home_team_summary, many=True).data
+        away_team_summary_data = self.get_serializer(away_team_summary, many=True).data
+
+        data = {
+            match.home_team.name: home_team_summary_data,
+            match.away_team.name: away_team_summary_data,
         }
 
         return Response(data, status=status.HTTP_200_OK)

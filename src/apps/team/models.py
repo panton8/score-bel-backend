@@ -45,3 +45,19 @@ class Match(CreatedUpdatedAt, UuidPk):
 
     def __str__(self):
         return f'{self.start_time}: {self.home_team} - {self.away_team}'
+
+
+class MatchEvent(CreatedUpdatedAt, UuidPk):
+    from player.models import Player
+
+    class ActionType(models.TextChoices):
+        GOAL = 'goal', 'GOAL'
+        YELLOW_CARD = 'yellow_card', 'YELLOW CARD'
+        RED_CARD = 'red_card', 'RED CARD'
+        SUB = 'sub', 'SUB'
+
+    match = models.ForeignKey(Match, on_delete=models.CASCADE, related_name='events')
+    minute = models.PositiveSmallIntegerField()
+    action = models.CharField(choices=ActionType.choices, max_length=15)
+    major_event_player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='+')
+    minor_event_player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='+', null=True, blank=True)
