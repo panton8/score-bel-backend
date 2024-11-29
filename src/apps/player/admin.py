@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from player.models import Player, Statistics, LineUp
+from team.models import Match
 
 
 @admin.register(Player)
@@ -18,3 +19,4 @@ class MatchLineupInline(admin.TabularInline):
     model = LineUp
     extra = 0
     autocomplete_fields = ['player']
+    ordering = ('player__team', )

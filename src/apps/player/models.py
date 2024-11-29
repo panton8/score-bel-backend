@@ -25,7 +25,7 @@ class Player(CreatedUpdatedAt, UuidPk):
         ]
 
     def __str__(self):
-        return f'{self.name} {self.surname} - {self.team}'
+        return f'{self.name} {self.surname}({self.position}) - {self.team}'
 
 
 class Statistics(CreatedUpdatedAt, UuidPk):
