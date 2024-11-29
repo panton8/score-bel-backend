@@ -2,6 +2,7 @@ import factory
 from datetime import date
 
 from player.models import Player, Statistics, LineUp
+from team.models import MatchEvent
 from team.testing.factories import TeamFactory, MatchFactory
 
 
@@ -36,3 +37,14 @@ class LineUpFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = LineUp
+
+
+class MatchEventFactory(factory.django.DjangoModelFactory):
+    match = factory.SubFactory(MatchFactory)
+    minute = 85
+    action = MatchEvent.ActionType.GOAL
+    major_event_player = factory.SubFactory(PlayerFactory)
+    minor_event_player = factory.SubFactory(PlayerFactory)
+
+    class Meta:
+        model = MatchEvent

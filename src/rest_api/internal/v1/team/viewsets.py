@@ -44,6 +44,14 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
 
     @extend_schema(
         responses={200: OpenApiTypes.OBJECT},
+        examples=[OpenApiExample(
+            name='match line-up',
+            value={"Нёман": {"start": [{"surname": "Савицкий", "position": "mid", "player_number": 10}],
+                             "bench": [{"surname": "Варакса", "position": "mid", "player_number": 82}]},
+                   "Батэ": {"start": [{"surname": "Скопец", "position": "gkp", "player_number": 99},
+                                      {"surname": "Жульпа", "position": "mid", "player_number": 19}],
+                            "bench": []}},
+        response_only=True)],
     )
     @action(detail=True, methods=['GET'], serializer_class=LineUpSerializer, url_path='line-up')
     def line_up(self, request, *args, **kwargs):
@@ -68,6 +76,11 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
 
     @extend_schema(
         responses={200: OpenApiTypes.OBJECT},
+        examples=[OpenApiExample(
+            name='match summary',
+            value={"Днепр": [{"minute": 8, "action": "yellow_card", "major_event_player_name": "Н.Краснов", "minor_event_player_name": None}],
+                   "Динамо-Минск": [{"minute": 15, "action": "yellow_card", "major_event_player_name": "Н.Демченко", "minor_event_player_name": None},]},
+            response_only=True)],
     )
     @action(detail=True, methods=['GET'], serializer_class=SummarySerializer, url_path='summary')
     def summary(self, request, *args, **kwargs):

@@ -128,3 +128,14 @@ class MatchTestCase(ApiTestCase):
         self.assertEqual(len(rsp), 2)
         self.assertIsNotNone(rsp[match.home_team.name])
         self.assertIsNotNone(rsp[match.away_team.name])
+
+    def test_match_summary__ok(self):
+        teams = TeamFactory.create_batch(2)
+        match = MatchFactory(home_team=teams[0], away_team=teams[1])
+        players = PlayerFactory.create_batch(
+            4,
+            team=factory.Iterator([teams[0], teams[0], teams[1], teams[1]]),
+            surname=factory.Iterator(['A', 'C', 'F', 'G']),
+            player_number=factory.Iterator([10, 11, 12, 13])
+        )
+
