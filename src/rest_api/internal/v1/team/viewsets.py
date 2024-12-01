@@ -6,13 +6,14 @@ from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
-from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySerializer
+from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySerializer, VoteSerializer
 from rest_api.internal.v1.team.serializers import TeamSerializer, TournamentSerializer, MatchSerializer
 from team.filters import MatchFilter
-from team.models import Team, Tournament, Match
-from rest_framework.permissions import AllowAny
+from team.models import Team, Tournament, Match, Voice
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from team.services.line_up_manager import LineUpManager
+from team.services.poll_service import PollService
 from team.services.summary_manager import SummaryManager
 from team.services.team_manager import TeamManager
 
@@ -98,3 +99,45 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
         }
 
         return Response(data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['GET'], permission_classes=(IsAuthenticated,))
+    def poll(self, request, *args, **kwargs):
+        match = self.get_object()
+        profile = request.user.profile
+        poll_service = PollService(profile=profile, match=match)
+        profile_voice = poll_service.is_profile_voted()
+
+        if not profile_voice:
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+        poll_res = poll_service.get_poll_result()
+        data = {
+            'profile_voice': profile_voice,
+            'poll_results': poll_res
+        }
+        return Response(data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['POST'], serializer_class=VoteSerializer, permission_classes=(IsAuthenticated,))
+    def vote(self, request, *args, **kwargs):
+        match = self.get_object()
+        profile = request.user.profile
+        poll_service = PollService(profile=profile, match=match)
+
+        profile_voice = poll_service.is_profile_voted()
+
+        if profile_voice:
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        data = serializer.validated_data
+
+        poll_service.make_voice(data['choice'])
+        profile_voice = poll_service.is_profile_voted()
+        poll_res = poll_service.get_poll_result()
+        data = {
+            'profile_voice': profile_voice,
+            'poll_results': poll_res
+        }
+
+        return Response(data=data, status=status.HTTP_201_CREATED)

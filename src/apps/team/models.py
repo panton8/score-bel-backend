@@ -3,6 +3,8 @@ from django.db.models import UniqueConstraint
 from core.django_model.mixins import CreatedUpdatedAt, UuidPk
 from django.db import models
 
+from user.models import UserProfile
+
 
 class Tournament(CreatedUpdatedAt):
     name = models.CharField(max_length=255, unique=True)
@@ -61,3 +63,21 @@ class MatchEvent(CreatedUpdatedAt, UuidPk):
     action = models.CharField(choices=ActionType.choices, max_length=15)
     major_event_player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='+')
     minor_event_player = models.ForeignKey(Player, on_delete=models.CASCADE, related_name='+', null=True, blank=True)
+
+
+class Poll(CreatedUpdatedAt, UuidPk):
+    match = models.ForeignKey(Match, on_delete=models.CASCADE, related_name='polls')
+
+
+class Voice(CreatedUpdatedAt, UuidPk):
+    class ChoiceType(models.TextChoices):
+        HOME_WIN = 'home_win', 'HOME_WIN'
+        AWAY_WIN = 'away_win', 'AWAY_WIN'
+        DRAW = 'draw', 'DRAW'
+
+    poll = models.ForeignKey(Poll, on_delete=models.CASCADE, related_name='voices')
+    choice = models.CharField(max_length=8, choices=ChoiceType.choices)
+    profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='voices')
+
+    class Meta:
+        constraints = [UniqueConstraint(fields=['poll', 'profile'], name='poll_unique_profile')]

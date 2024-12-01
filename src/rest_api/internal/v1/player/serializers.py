@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from player.models import Player, Statistics, LineUp
-from team.models import MatchEvent
+from team.models import MatchEvent, Voice
 from typing import Optional
 
 
@@ -55,3 +55,10 @@ class SummarySerializer(serializers.ModelSerializer):
         if not obj.minor_event_player:
             return None
         return f'{obj.minor_event_player.name[0]}.{obj.minor_event_player.surname}'
+
+
+class VoteSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Voice
+        fields = ('choice', )

@@ -1,11 +1,14 @@
 import factory
 from datetime import datetime, date
 from rest_framework.test import APIClient
+from rest_framework.status import HTTP_204_NO_CONTENT, HTTP_201_CREATED
 
-from player.testing.factories import PlayerFactory, LineUpFactory
+from player.testing.factories import PlayerFactory, LineUpFactory, MatchEventFactory
 from rest_api.testing.api_test_case import ApiTestCase
 from rest_api.testing.entity_test_api import EntityTestApi
-from team.testing.factories import TeamFactory, TournamentFactory, MatchFactory
+from team.models import MatchEvent
+from team.testing.factories import TeamFactory, TournamentFactory, MatchFactory, PollFactory, VoiceFactory
+from user.testing.factories import UserProfileFactory
 
 
 class TournamentTestApi(EntityTestApi):
@@ -138,4 +141,75 @@ class MatchTestCase(ApiTestCase):
             surname=factory.Iterator(['A', 'C', 'F', 'G']),
             player_number=factory.Iterator([10, 11, 12, 13])
         )
+        events = MatchEventFactory.create_batch(
+            2,
+            match=match,
+            minute=factory.Iterator([34, 78]),
+            action=factory.Iterator([MatchEvent.ActionType.GOAL, MatchEvent.ActionType.SUB]),
+            major_event_player=factory.Iterator([players[0], players[2]]),
+            minor_event_player=factory.Iterator([players[1], players[3]]),
+        )
 
+        resp = self.api.detail_get_action('summary', match.pk)
+
+        self.assertEqual(len(resp), 2)
+        self.assertEqual(len(resp[match.home_team.name]), 1)
+        self.assertEqual(resp[match.home_team.name][0]['minute'], events[0].minute)
+        self.assertEqual(resp[match.home_team.name][0]['action'], events[0].action)
+        self.assertEqual(len(resp[match.away_team.name]), 1)
+        self.assertEqual(resp[match.away_team.name][0]['minute'], events[1].minute)
+        self.assertEqual(resp[match.away_team.name][0]['action'], events[1].action)
+
+    def test_match_poll__profile_without_voice__204(self):
+        profile = UserProfileFactory()
+        self.client.force_authenticate(profile.user)
+        match = MatchFactory()
+        poll = PollFactory(match=match)
+        VoiceFactory.create_batch(
+            5,
+            poll=poll,
+            choice=factory.Iterator(['home_win', 'home_win', 'home_min', 'draw', 'away_win']))
+
+        self.api.detail_get_action('poll', match.pk, expected_code=HTTP_204_NO_CONTENT)
+
+    def test_match_poll__profile_with_voice__ok(self):
+        profile = UserProfileFactory()
+        self.client.force_authenticate(profile.user)
+        match = MatchFactory()
+        poll = PollFactory(match=match)
+        VoiceFactory.create_batch(
+            4,
+            poll=poll,
+            choice=factory.Iterator(['home_win', 'home_win', 'draw', 'away_win']))
+        VoiceFactory(profile=profile, poll=poll, choice='home_win')
+
+        resp = self.api.detail_get_action('poll', match.pk)
+
+        self.assertDictEqual(resp, {'profile_voice': 'home_win', 'poll_results': {'home_win': 60.0, 'away_win': 20.0, 'draw': 20.0}})
+
+    def test_match_vote__profile_without_voice__ok(self):
+        profile = UserProfileFactory()
+        self.client.force_authenticate(profile.user)
+        match = MatchFactory()
+        poll = PollFactory(match=match)
+        VoiceFactory.create_batch(
+            4,
+            poll=poll,
+            choice=factory.Iterator(['home_win', 'home_win', 'draw', 'away_win']))
+
+        resp = self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_201_CREATED)
+
+        self.assertDictEqual(resp, {'profile_voice': 'away_win', 'poll_results': {'home_win': 40.0, 'away_win': 40.0, 'draw': 20.0}})
+
+    def test_match_vote__profile_with_voice__ok(self):
+        profile = UserProfileFactory()
+        self.client.force_authenticate(profile.user)
+        match = MatchFactory()
+        poll = PollFactory(match=match)
+        VoiceFactory.create_batch(
+            4,
+            poll=poll,
+            choice=factory.Iterator(['home_win', 'home_win', 'draw', 'away_win']))
+        VoiceFactory(profile=profile, poll=poll, choice='home_win')
+
+        resp = self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_204_NO_CONTENT)
