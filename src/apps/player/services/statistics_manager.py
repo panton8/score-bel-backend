@@ -1,6 +1,7 @@
 from player.models import Player, Statistics
 from django.db.models import QuerySet
 
+
 class StatisticsManager:
     def __init__(self, player: Player) -> None:
         self.player = player

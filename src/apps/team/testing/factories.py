@@ -1,7 +1,8 @@
 import factory
 from datetime import datetime
 
-from team.models import Tournament, Team, Match
+from team.models import Tournament, Team, Match, Poll, Voice
+from user.testing.factories import UserProfileFactory
 
 
 class TournamentFactory(factory.django.DjangoModelFactory):
@@ -40,3 +41,19 @@ class MatchFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = Match
+
+
+class PollFactory(factory.django.DjangoModelFactory):
+    match = factory.SubFactory(MatchFactory)
+
+    class Meta:
+        model = Poll
+
+
+class VoiceFactory(factory.django.DjangoModelFactory):
+    poll = factory.SubFactory(PollFactory)
+    profile = factory.SubFactory(UserProfileFactory)
+    choice = Voice.ChoiceType.HOME_WIN
+
+    class Meta:
+        model = Voice

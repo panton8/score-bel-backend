@@ -7,5 +7,5 @@ class Command(BaseCommand):
     help = 'Generate default stats for players'
 
     def handle(self, *args, **options):
-        players = Player.objects.all()
+        players = Player.objects.filter(statistics__isnull=True)
         StatisticsManager.make_default_statistics(players)
