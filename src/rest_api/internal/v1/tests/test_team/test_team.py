@@ -160,21 +160,8 @@ class MatchTestCase(ApiTestCase):
         self.assertEqual(resp[match.away_team.name][0]['minute'], events[1].minute)
         self.assertEqual(resp[match.away_team.name][0]['action'], events[1].action)
 
-    def test_match_poll__profile_without_voice__204(self):
-        profile = UserProfileFactory()
-        self.client.force_authenticate(profile.user)
-        match = MatchFactory()
-        poll = PollFactory(match=match)
-        VoiceFactory.create_batch(
-            5,
-            poll=poll,
-            choice=factory.Iterator(['home_win', 'home_win', 'home_min', 'draw', 'away_win']))
-
-        self.api.detail_get_action('poll', match.pk, expected_code=HTTP_204_NO_CONTENT)
-
     def test_match_poll__profile_with_voice__ok(self):
         profile = UserProfileFactory()
-        self.client.force_authenticate(profile.user)
         match = MatchFactory()
         poll = PollFactory(match=match)
         VoiceFactory.create_batch(
@@ -185,7 +172,7 @@ class MatchTestCase(ApiTestCase):
 
         resp = self.api.detail_get_action('poll', match.pk)
 
-        self.assertDictEqual(resp, {'profile_voice': 'home_win', 'poll_results': {'home_win': 60.0, 'away_win': 20.0, 'draw': 20.0}})
+        self.assertDictEqual(resp, {'home_win': 60.0, 'away_win': 20.0, 'draw': 20.0})
 
     def test_match_vote__profile_without_voice__ok(self):
         profile = UserProfileFactory()

@@ -100,30 +100,20 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
 
         return Response(data, status=status.HTTP_200_OK)
 
-    @action(detail=True, methods=['GET'], permission_classes=(IsAuthenticated,))
+    @action(detail=True, methods=['GET'], permission_classes=(AllowAny,))
     def poll(self, request, *args, **kwargs):
         match = self.get_object()
-        profile = request.user.profile
-        poll_service = PollService(profile=profile, match=match)
-        profile_voice = poll_service.is_profile_voted()
 
-        if not profile_voice:
-            return Response(status=status.HTTP_204_NO_CONTENT)
-
-        poll_res = poll_service.get_poll_result()
-        data = {
-            'profile_voice': profile_voice,
-            'poll_results': poll_res
-        }
-        return Response(data, status=status.HTTP_200_OK)
+        poll_res = PollService().get_poll_result(match=match)
+        return Response(data=poll_res, status=status.HTTP_200_OK)
 
     @action(detail=True, methods=['POST'], serializer_class=VoteSerializer, permission_classes=(IsAuthenticated,))
     def vote(self, request, *args, **kwargs):
         match = self.get_object()
         profile = request.user.profile
-        poll_service = PollService(profile=profile, match=match)
+        poll_service = PollService()
 
-        profile_voice = poll_service.is_profile_voted()
+        profile_voice = poll_service.is_profile_voted(profile=profile, match=match)
 
         if profile_voice:
             return Response(status=status.HTTP_204_NO_CONTENT)
@@ -132,11 +122,10 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
         serializer.is_valid(raise_exception=True)
         data = serializer.validated_data
 
-        poll_service.make_voice(data['choice'])
-        profile_voice = poll_service.is_profile_voted()
-        poll_res = poll_service.get_poll_result()
+        poll_service.make_voice(profile, match, data['choice'])
+        poll_res = poll_service.get_poll_result(match)
         data = {
-            'profile_voice': profile_voice,
+            'profile_voice': data['choice'],
             'poll_results': poll_res
         }
 

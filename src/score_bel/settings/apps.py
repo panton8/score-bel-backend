@@ -13,6 +13,7 @@ INSTALLED_APPS = [
 
     'drf_spectacular',
     'corsheaders',
+    'storages',
 
     'base',
     'user',
