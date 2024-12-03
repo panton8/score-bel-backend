@@ -11,20 +11,21 @@ class TestPollService(TestCase):
     def setUp(self):
         self.profile = UserProfileFactory()
         self.match = MatchFactory()
-        self.service = PollService(profile=self.profile, match=self.match)
+        self.service = PollService()
 
     def test_poll_service__profile_voice__without_voice(self):
-        res = self.service.is_profile_voted()
+        res = self.service.is_profile_voted(self.profile, self.match)
         self.assertIsNone(res)
 
     def test_poll_service__profile_voice__with_voice(self):
-        VoiceFactory(profile=self.profile, choice=Voice.ChoiceType.DRAW, poll=self.service.poll)
-        res = self.service.is_profile_voted()
+        poll = PollFactory(match=self.match)
+        VoiceFactory(profile=self.profile, choice=Voice.ChoiceType.DRAW, poll=poll)
+        res = self.service.is_profile_voted(self.profile, self.match)
         self.assertEqual(res, 'draw')
 
     def test_poll_service__make_voice__ok(self):
         voice_before = Voice.objects.filter(profile=self.profile).count()
-        self.service.make_voice(Voice.ChoiceType.AWAY_WIN)
+        self.service.make_voice(self.profile, self.match, Voice.ChoiceType.AWAY_WIN)
         voice_after = Voice.objects.filter(profile=self.profile).count()
 
         self.assertEqual(voice_before, 0)
@@ -32,11 +33,12 @@ class TestPollService(TestCase):
 
     def test_poll_service__get_poll_results__no_voice(self):
         _v = Voice.ChoiceType
+        poll = PollFactory(match=self.match)
         VoiceFactory.create_batch(
             5,
-            poll=self.service.poll,
+            poll=poll,
             choice=factory.Iterator([_v.HOME_WIN, _v.DRAW, _v.DRAW, _v.AWAY_WIN, _v.DRAW]))
 
-        res = self.service.get_poll_result()
+        res = self.service.get_poll_result(self.match)
 
         self.assertDictEqual(res, {'home_win': 20, 'away_win': 20, 'draw': 60})

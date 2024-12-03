@@ -16,7 +16,7 @@ class TeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
         fields = ('code_name', 'name', 'played', 'wins', 'losses', 'draws', 'goals_for',
-                  'goals_against', 'goals_diff', 'points', 'tournament')
+                  'goals_against', 'goals_diff', 'points', 'tournament', 'logo')
 
     def get_points(self, team: Team) -> int:
         return team.wins * 3 + team.draws

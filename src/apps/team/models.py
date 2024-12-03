@@ -18,6 +18,7 @@ class Tournament(CreatedUpdatedAt):
 class Team(CreatedUpdatedAt):
     name = models.CharField(max_length=255, unique=True)
     code_name = models.CharField(primary_key=True, max_length=255, unique=True)
+    logo = models.URLField(null=True)
     played = models.PositiveSmallIntegerField(default=0)
     wins = models.PositiveSmallIntegerField(default=0)
     losses = models.PositiveSmallIntegerField(default=0)
