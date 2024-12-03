@@ -1,7 +1,7 @@
 import factory
 from datetime import datetime
 
-from team.models import Tournament, Team, Match, Poll, Voice
+from team.models import Tournament, Team, Match, Poll, Voice, Discussion, DiscussionMessage
 from user.testing.factories import UserProfileFactory
 
 
@@ -57,3 +57,19 @@ class VoiceFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = Voice
+
+
+class DiscussionFactory(factory.django.DjangoModelFactory):
+    match = factory.SubFactory(MatchFactory)
+
+    class Meta:
+        model = Discussion
+
+
+class DiscussionMessageFactory(factory.django.DjangoModelFactory):
+    discussion = factory.SubFactory(DiscussionFactory)
+    profile = factory.SubFactory(UserProfileFactory)
+    message = factory.Faker('text')
+
+    class Meta:
+        model = DiscussionMessage

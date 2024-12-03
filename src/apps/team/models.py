@@ -82,3 +82,14 @@ class Voice(CreatedUpdatedAt, UuidPk):
 
     class Meta:
         constraints = [UniqueConstraint(fields=['poll', 'profile'], name='poll_unique_profile')]
+
+
+class Discussion(CreatedUpdatedAt, UuidPk):
+    match = models.OneToOneField(Match, on_delete=models.CASCADE, related_name='discussions')
+    is_open = models.BooleanField(default=True)
+
+
+class DiscussionMessage(CreatedUpdatedAt, UuidPk):
+    discussion = models.ForeignKey(Discussion, on_delete=models.CASCADE, related_name='messages')
+    message = models.TextField()
+    profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, related_name='discussion_messages')
