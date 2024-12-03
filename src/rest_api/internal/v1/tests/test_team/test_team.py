@@ -173,7 +173,8 @@ class MatchTestCase(ApiTestCase):
 
         resp = self.api.detail_get_action('poll', match.pk)
 
-        self.assertDictEqual(resp, {'home_win': 60.0, 'away_win': 20.0, 'draw': 20.0})
+        self.assertDictEqual(resp, {'home_win': 60.0, 'away_win': 20.0, 'draw': 20.0,
+                                    'home_win_count': 3, 'away_win_count': 1, 'draw_count': 1})
 
     def test_match_vote__profile_without_voice__ok(self):
         profile = UserProfileFactory()
@@ -187,7 +188,10 @@ class MatchTestCase(ApiTestCase):
 
         resp = self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_201_CREATED)
 
-        self.assertDictEqual(resp, {'profile_voice': 'away_win', 'poll_results': {'home_win': 40.0, 'away_win': 40.0, 'draw': 20.0}})
+        self.assertDictEqual(resp, {'profile_voice': 'away_win',
+                                    'poll_results': {'home_win': 40.0, 'away_win': 40.0, 'draw': 20.0,
+                                                     'home_win_count': 2, 'away_win_count': 2, 'draw_count': 1
+                                                     }})
 
     def test_match_vote__profile_with_voice__ok(self):
         profile = UserProfileFactory()

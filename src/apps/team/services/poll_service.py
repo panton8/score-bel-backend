@@ -25,13 +25,18 @@ class PollService:
         all_voices_count = all_voices.count()
 
         if not all_voices_count:
-            return {'home_win': 0, 'away_win': 0, 'draw': 0}
+            return {'draw_count': 0, 'away_win_count': 0, 'home_win_count': 0,
+                'home_win': 0, 'away_win': 0, 'draw': 0}
 
-        home_win = all_voices.filter(choice=Voice.ChoiceType.HOME_WIN).count() / all_voices_count * 100
-        away_win = all_voices.filter(choice=Voice.ChoiceType.AWAY_WIN).count() / all_voices_count * 100
-        draw = all_voices.filter(choice=Voice.ChoiceType.DRAW).count() / all_voices_count * 100
+        home_win_count = all_voices.filter(choice=Voice.ChoiceType.HOME_WIN).count()
+        away_win_count = all_voices.filter(choice=Voice.ChoiceType.AWAY_WIN).count()
+        draw_count = all_voices.filter(choice=Voice.ChoiceType.DRAW).count()
+        home_win = home_win_count / all_voices_count * 100
+        away_win = away_win_count / all_voices_count * 100
+        draw = draw_count / all_voices_count * 100
 
-        return {'home_win': home_win, 'away_win': away_win, 'draw': draw}
+        return {'draw_count': draw_count, 'away_win_count': away_win_count, 'home_win_count': home_win_count,
+                'home_win': home_win, 'away_win': away_win, 'draw': draw}
 
     def make_voice(self, profile: UserProfile, match: Match, voice_value: str):
         poll = self.__get_poll_by_match(match)
