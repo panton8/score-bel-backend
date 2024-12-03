@@ -6,12 +6,14 @@ from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
-from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySerializer, VoteSerializer
+from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySerializer, VoteSerializer, \
+    DiscussionMessageSerializer
 from rest_api.internal.v1.team.serializers import TeamSerializer, TournamentSerializer, MatchSerializer
 from team.filters import MatchFilter
 from team.models import Team, Tournament, Match, Voice
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
+from team.services.discussion_service import DiscussionService
 from team.services.line_up_manager import LineUpManager
 from team.services.poll_service import PollService
 from team.services.summary_manager import SummaryManager
@@ -130,3 +132,30 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
         }
 
         return Response(data=data, status=status.HTTP_201_CREATED)
+
+    @action(detail=True, methods=['GET'], permission_classes=(AllowAny,),
+            serializer_class=DiscussionMessageSerializer, url_path='discussion-messages')
+    def discussion_messages(self, request, *args, **kwargs):
+        match = self.get_object()
+        discussion_service = DiscussionService()
+        discussion = discussion_service.get_discussion(match)
+        messages = discussion_service.get_discussions_messages(discussion)
+
+        messages_data = self.get_serializer(messages, many=True).data
+
+        return Response(messages_data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=['POST'], permission_classes=(IsAuthenticated,),
+            serializer_class=DiscussionMessageSerializer, url_path='message')
+    def message(self, request, *args, **kwargs):
+        match = self.get_object()
+        profile = request.user.profile
+        discussion_service = DiscussionService()
+        discussion = discussion_service.get_discussion(match)
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        msg = serializer.validated_data['message']
+        discussion_service.add_message_to_discussion(profile, discussion, msg)
+
+        return Response(data={'message': msg}, status=status.HTTP_201_CREATED)
+

@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from player.models import Player, Statistics, LineUp
-from team.models import MatchEvent, Voice
+from team.models import MatchEvent, Voice, DiscussionMessage
 from typing import Optional
 
 
@@ -62,3 +62,11 @@ class VoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Voice
         fields = ('choice', )
+
+
+class DiscussionMessageSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(source='user.username', read_only=True)
+
+    class Meta:
+        model = DiscussionMessage
+        fields = ('message', 'username', )

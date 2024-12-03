@@ -42,3 +42,9 @@ class TestPollService(TestCase):
         res = self.service.get_poll_result(self.match)
 
         self.assertDictEqual(res, {'home_win': 20, 'away_win': 20, 'draw': 60})
+
+    def test_poll_service__get_poll_results_withount_voices__ok(self):
+        PollFactory(match=self.match)
+        res = self.service.get_poll_result(self.match)
+
+        self.assertDictEqual(res, {'home_win': 0, 'away_win': 0, 'draw': 0})

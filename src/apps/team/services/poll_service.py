@@ -23,6 +23,10 @@ class PollService:
         poll = self.__get_poll_by_match(match)
         all_voices = Voice.objects.filter(poll=poll)
         all_voices_count = all_voices.count()
+
+        if not all_voices_count:
+            return {'home_win': 0, 'away_win': 0, 'draw': 0}
+
         home_win = all_voices.filter(choice=Voice.ChoiceType.HOME_WIN).count() / all_voices_count * 100
         away_win = all_voices.filter(choice=Voice.ChoiceType.AWAY_WIN).count() / all_voices_count * 100
         draw = all_voices.filter(choice=Voice.ChoiceType.DRAW).count() / all_voices_count * 100

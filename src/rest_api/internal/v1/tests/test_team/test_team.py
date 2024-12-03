@@ -6,8 +6,9 @@ from rest_framework.status import HTTP_204_NO_CONTENT, HTTP_201_CREATED
 from player.testing.factories import PlayerFactory, LineUpFactory, MatchEventFactory
 from rest_api.testing.api_test_case import ApiTestCase
 from rest_api.testing.entity_test_api import EntityTestApi
-from team.models import MatchEvent
-from team.testing.factories import TeamFactory, TournamentFactory, MatchFactory, PollFactory, VoiceFactory
+from team.models import MatchEvent, DiscussionMessage
+from team.testing.factories import TeamFactory, TournamentFactory, MatchFactory, PollFactory, VoiceFactory, \
+    DiscussionFactory, DiscussionMessageFactory
 from user.testing.factories import UserProfileFactory
 
 
@@ -199,4 +200,27 @@ class MatchTestCase(ApiTestCase):
             choice=factory.Iterator(['home_win', 'home_win', 'draw', 'away_win']))
         VoiceFactory(profile=profile, poll=poll, choice='home_win')
 
-        resp = self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_204_NO_CONTENT)
+        self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_204_NO_CONTENT)
+
+    def test_discussion__get_messages__ok(self):
+        discussions = DiscussionFactory.create_batch(2)
+        DiscussionMessageFactory.create_batch(3, discussion=discussions[0])
+        DiscussionMessageFactory.create_batch(8, discussion=discussions[1])
+
+        rsp = self.api.detail_get_action('discussion-messages', discussions[1].match.pk)
+
+        self.assertEqual(len(rsp), 8)
+
+    def test_discussion__add_messages__ok(self):
+        profile = UserProfileFactory()
+        self.client.force_authenticate(profile.user)
+
+        discussion = DiscussionFactory()
+        msgs_before = DiscussionMessage.objects.count()
+
+        self.api.detail_post_action(action='message', pk=discussion.match.pk,
+                                    data={'message': 'HI'}, expected_code=HTTP_201_CREATED)
+
+        msgs_after = DiscussionMessage.objects.filter(discussion=discussion).count()
+        self.assertEqual(msgs_before, 0)
+        self.assertEqual(msgs_after, 1)
