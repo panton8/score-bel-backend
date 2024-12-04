@@ -1,15 +1,16 @@
 import os
 import sys
+from datetime import timedelta
 
 import environ
 
 from .apps import *
 from .auth_user import *
 from .databases import *
-from .middlewares import *
-from .templates import *
-from .rest_framework import *
 from .drf_spectacular import *
+from .middlewares import *
+from .rest_framework import *
+from .templates import *
 
 env = environ.Env()
 
@@ -58,3 +59,8 @@ CORS_ALLOWED_ORIGIN_REGEXES = env.list('CORS_ALLOWED_ORIGIN_REGEXES',
                                        default=['http://localhost:3000'])
 
 APPEND_SLASH = env.bool('APPEND_SLASH', default=True)
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=90),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}
