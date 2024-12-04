@@ -65,8 +65,11 @@ class VoteSerializer(serializers.ModelSerializer):
 
 
 class DiscussionMessageSerializer(serializers.ModelSerializer):
-    username = serializers.CharField(source='user.username', read_only=True)
+    username = serializers.SerializerMethodField(read_only=True)
 
     class Meta:
         model = DiscussionMessage
         fields = ('message', 'username', )
+
+    def get_username(self, obj: DiscussionMessage) -> str:
+        return obj.profile.user.username

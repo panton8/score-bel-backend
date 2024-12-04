@@ -10,7 +10,7 @@ from rest_api.internal.v1.player.serializers import LineUpSerializer, SummarySer
     DiscussionMessageSerializer
 from rest_api.internal.v1.team.serializers import TeamSerializer, TournamentSerializer, MatchSerializer
 from team.filters import MatchFilter
-from team.models import Team, Tournament, Match, Voice
+from team.models import Team, Tournament, Match
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from team.services.discussion_service import DiscussionService
@@ -118,7 +118,7 @@ class MatchViewSet(GenericViewSet, ListModelMixin, RetrieveModelMixin):
         profile_voice = poll_service.is_profile_voted(profile=profile, match=match)
 
         if profile_voice:
-            return Response(status=status.HTTP_204_NO_CONTENT)
+            return Response(data={'code': 'you_can_not_vote_twice'}, status=status.HTTP_400_BAD_REQUEST)
 
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)

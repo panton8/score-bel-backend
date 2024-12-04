@@ -1,7 +1,7 @@
 import factory
 from datetime import datetime, date
 from rest_framework.test import APIClient
-from rest_framework.status import HTTP_204_NO_CONTENT, HTTP_201_CREATED
+from rest_framework.status import HTTP_400_BAD_REQUEST, HTTP_201_CREATED
 
 from player.testing.factories import PlayerFactory, LineUpFactory, MatchEventFactory
 from rest_api.testing.api_test_case import ApiTestCase
@@ -204,7 +204,8 @@ class MatchTestCase(ApiTestCase):
             choice=factory.Iterator(['home_win', 'home_win', 'draw', 'away_win']))
         VoiceFactory(profile=profile, poll=poll, choice='home_win')
 
-        self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_204_NO_CONTENT)
+        res = self.api.detail_post_action('vote', pk=match.pk, data={'choice': 'away_win'}, expected_code=HTTP_400_BAD_REQUEST)
+        self.assertEqual(res['code'], 'you_can_not_vote_twice')
 
     def test_discussion__get_messages__ok(self):
         discussions = DiscussionFactory.create_batch(2)
