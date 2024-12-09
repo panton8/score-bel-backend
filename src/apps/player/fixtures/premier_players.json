@@ -1,0 +1,3837 @@
+[
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Игнатьев",
+            "team": "bate-borisov",
+            "birth_date": "1996-04-15",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Борис",
+            "surname": "Панкратов",
+            "team": "bate-borisov",
+            "birth_date": "1994-05-02",
+            "position": "gkp",
+            "player_number": 2,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Янн",
+            "surname": "Аффи",
+            "team": "bate-borisov",
+            "birth_date": "1995-09-18",
+            "position": "def",
+            "player_number": 3,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Шериф",
+            "surname": "Джимох",
+            "team": "bate-borisov",
+            "birth_date": "1995-08-22",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Руслан",
+            "surname": "Хадаркевич",
+            "team": "bate-borisov",
+            "birth_date": "1993-06-14",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Мартынов",
+            "team": "bate-borisov",
+            "birth_date": "1996-03-03",
+            "position": "def",
+            "player_number": 6,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Нескромный",
+            "team": "bate-borisov",
+            "birth_date": "1995-02-28",
+            "position": "def",
+            "player_number": 7,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егоров",
+            "surname": "Осипов",
+            "team": "bate-borisov",
+            "birth_date": "1998-04-09",
+            "position": "def",
+            "player_number": 8,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Павел",
+            "surname": "Пашевич",
+            "team": "bate-borisov",
+            "birth_date": "1994-06-04",
+            "position": "def",
+            "player_number": 9,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Виктор",
+            "surname": "Сотников",
+            "team": "bate-borisov",
+            "birth_date": "1997-11-07",
+            "position": "def",
+            "player_number": 10,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Алексеевич",
+            "team": "bate-borisov",
+            "birth_date": "1994-07-25",
+            "position": "mid",
+            "player_number": 11,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Анафриев",
+            "team": "bate-borisov",
+            "birth_date": "1995-09-13",
+            "position": "mid",
+            "player_number": 12,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Арсений",
+            "surname": "Блоцкий",
+            "team": "bate-borisov",
+            "birth_date": "1994-10-02",
+            "position": "mid",
+            "player_number": 13,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Чернух",
+            "team": "bate-borisov",
+            "birth_date": "1996-08-22",
+            "position": "mid",
+            "player_number": 14,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Захар",
+            "surname": "Гитсевель",
+            "team": "bate-borisov",
+            "birth_date": "1995-06-11",
+            "position": "mid",
+            "player_number": 15,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Русенчик",
+            "team": "bate-borisov",
+            "birth_date": "1997-12-29",
+            "position": "mid",
+            "player_number": 16,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Заи",
+            "surname": "Сидибе",
+            "team": "bate-borisov",
+            "birth_date": "1999-05-17",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Данила",
+            "surname": "Жульпа",
+            "team": "bate-borisov",
+            "birth_date": "2000-04-07",
+            "position": "mid",
+            "player_number": 18,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Темур",
+            "surname": "Джикия",
+            "team": "bate-borisov",
+            "birth_date": "1995-10-06",
+            "position": "fwd",
+            "player_number": 19,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Киселев",
+            "team": "bate-borisov",
+            "birth_date": "1998-12-15",
+            "position": "fwd",
+            "player_number": 20,
+            "created_at": "2020-01-30T00:00:00+03:00",
+            "updated_at": "2020-01-30T00:00:00+03:00"
+        }
+    },
+  {
+    "model": "player.Player",
+    "fields": {
+        "name": "Максим",
+        "surname": "Белов",
+        "team": "neman-grodno",
+        "birth_date": "1999-01-01",
+        "position": "gkp",
+        "player_number": 12,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Артем",
+        "surname": "Малевский",
+        "team": "neman-grodno",
+        "birth_date": "2001-04-15",
+        "position": "gkp",
+        "player_number": 1,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Павел",
+        "surname": "Савицкий",
+        "team": "neman-grodno",
+        "birth_date": "1998-09-20",
+        "position": "def",
+        "player_number": 77,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Владислав",
+        "surname": "Космынин",
+        "team": "neman-grodno",
+        "birth_date": "1989-06-10",
+        "position": "def",
+        "player_number": 90,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Алексей",
+        "surname": "Лаврик",
+        "team": "neman-grodno",
+        "birth_date": "1999-03-22",
+        "position": "def",
+        "player_number": 55,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Юрий",
+        "surname": "Пантья",
+        "team": "neman-grodno",
+        "birth_date": "1989-10-01",
+        "position": "def",
+        "player_number": 8,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Максим",
+        "surname": "Яблонский",
+        "team": "neman-grodno",
+        "birth_date": "1995-05-11",
+        "position": "def",
+        "player_number": 78,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Егор",
+        "surname": "Пархоменко",
+        "team": "neman-grodno",
+        "birth_date": "2003-02-17",
+        "position": "def",
+        "player_number": 5,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Сергей",
+        "surname": "Карпович",
+        "team": "neman-grodno",
+        "birth_date": "1994-12-25",
+        "position": "def",
+        "player_number": 33,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Александр",
+        "surname": "Анюкевич",
+        "team": "neman-grodno",
+        "birth_date": "1992-08-21",
+        "position": "def",
+        "player_number": 14,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Иван",
+        "surname": "Садовничий",
+        "team": "neman-grodno",
+        "birth_date": "1986-04-11",
+        "position": "def",
+        "player_number": 20,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Андрей",
+        "surname": "Васильев",
+        "team": "neman-grodno",
+        "birth_date": "1992-02-20",
+        "position": "mid",
+        "player_number": 4,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Алексей",
+        "surname": "Легчилен",
+        "team": "neman-grodno",
+        "birth_date": "1991-07-06",
+        "position": "mid",
+        "player_number": 46,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Михаил",
+        "surname": "Козлов",
+        "team": "neman-grodno",
+        "birth_date": "1990-05-18",
+        "position": "mid",
+        "player_number": 47,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Алексей",
+        "surname": "Дайнека",
+        "team": "neman-grodno",
+        "birth_date": "2006-03-25",
+        "position": "mid",
+        "player_number": 13,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Олег",
+        "surname": "Евдокимов",
+        "team": "neman-grodno",
+        "birth_date": "1994-08-15",
+        "position": "mid",
+        "player_number": 15,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Гульжигит",
+        "surname": "Алыкулов",
+        "team": "neman-grodno",
+        "birth_date": "1999-10-10",
+        "position": "mid",
+        "player_number": 10,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+{
+    "model": "player.Player",
+    "fields": {
+        "name": "Игорь",
+        "surname": "Костров",
+        "team": "neman-grodno",
+        "birth_date": "1987-11-29",
+        "position": "mid",
+        "player_number": 9,
+        "created_at": "2024-01-01T00:00:00+03:00",
+        "updated_at": "2024-01-01T00:00:00+03:00"
+    }
+},
+     {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Климович",
+            "team": "isloch",
+            "birth_date": "1988-12-15",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Свирский",
+            "team": "isloch",
+            "birth_date": "1999-05-20",
+            "position": "gkp",
+            "player_number": 28,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Денисенко",
+            "team": "isloch",
+            "birth_date": "1999-08-30",
+            "position": "gkp",
+            "player_number": 24,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Принс",
+            "surname": "Ампонса Аннор",
+            "team": "isloch",
+            "birth_date": "2003-11-05",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Олег",
+            "surname": "Веретило",
+            "team": "isloch",
+            "birth_date": "1988-03-14",
+            "position": "def",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Гоманов",
+            "team": "isloch",
+            "birth_date": "2005-02-12",
+            "position": "def",
+            "player_number": 18,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Журавлёв",
+            "team": "isloch",
+            "birth_date": "2004-06-10",
+            "position": "def",
+            "player_number": 21,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Калачев",
+            "team": "isloch",
+            "birth_date": "1999-06-10",
+            "position": "def",
+            "player_number": 44,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Константин",
+            "surname": "Кучинский",
+            "team": "isloch",
+            "birth_date": "1998-02-25",
+            "position": "def",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Родионов",
+            "team": "isloch",
+            "birth_date": "1999-05-20",
+            "position": "def",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Тихомиров",
+            "team": "isloch",
+            "birth_date": "2004-02-28",
+            "position": "def",
+            "player_number": 3,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Юдчитс",
+            "team": "isloch",
+            "birth_date": "1996-04-10",
+            "position": "def",
+            "player_number": 99,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Воронович",
+            "team": "isloch",
+            "birth_date": "2006-01-10",
+            "position": "def",
+            "player_number": 35,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Рамин",
+            "surname": "Алии",
+            "team": "isloch",
+            "birth_date": "2001-08-22",
+            "position": "mid",
+            "player_number": 8,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вику",
+            "surname": "Булмага",
+            "team": "isloch",
+            "birth_date": "2003-10-05",
+            "position": "mid",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Даниил",
+            "surname": "Галята",
+            "team": "isloch",
+            "birth_date": "2006-05-16",
+            "position": "mid",
+            "player_number": 25,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Мирас",
+            "surname": "Кобеев",
+            "team": "isloch",
+            "birth_date": "2003-07-30",
+            "position": "mid",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Ковель",
+            "team": "isloch",
+            "birth_date": "1999-04-12",
+            "position": "mid",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владимир",
+            "surname": "Масловский",
+            "team": "isloch",
+            "birth_date": "2001-01-18",
+            "position": "mid",
+            "player_number": 88,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Всеволод",
+            "surname": "Нихаев",
+            "team": "isloch",
+            "birth_date": "1999-10-04",
+            "position": "mid",
+            "player_number": 82,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Валерий",
+            "surname": "Сенко",
+            "team": "isloch",
+            "birth_date": "1998-11-25",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Сибилев",
+            "team": "isloch",
+            "birth_date": "2000-07-30",
+            "position": "mid",
+            "player_number": 6,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Макась",
+            "team": "isloch",
+            "birth_date": "1991-08-15",
+            "position": "fwd",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Родион",
+            "surname": "Медведев",
+            "team": "isloch",
+            "birth_date": "2006-12-09",
+            "position": "fwd",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Митрофанов",
+            "team": "isloch",
+            "birth_date": "2002-03-22",
+            "position": "fwd",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Глеб",
+            "surname": "Ровдо",
+            "team": "isloch",
+            "birth_date": "2002-12-01",
+            "position": "fwd",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Ховалко",
+            "team": "isloch",
+            "birth_date": "2003-03-15",
+            "position": "fwd",
+            "player_number": 29,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Шестюк",
+            "team": "isloch",
+            "birth_date": "2002-09-22",
+            "position": "fwd",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Гущенко",
+            "team": "fk-vitebsk",
+            "birth_date": "1988-11-02",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Саприко",
+            "team": "fk-vitebsk",
+            "birth_date": "2006-06-15",
+            "position": "gkp",
+            "player_number": 70,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Харитонов",
+            "team": "fk-vitebsk",
+            "birth_date": "1997-02-17",
+            "position": "gkp",
+            "player_number": 12,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Воробьев",
+            "team": "fk-vitebsk",
+            "birth_date": "2001-01-05",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Гулецкий",
+            "team": "fk-vitebsk",
+            "birth_date": "2001-06-10",
+            "position": "def",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Семён",
+            "surname": "Егоров",
+            "team": "fk-vitebsk",
+            "birth_date": "1998-08-04",
+            "position": "def",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Кравченко",
+            "team": "fk-vitebsk",
+            "birth_date": "2006-03-29",
+            "position": "def",
+            "player_number": 43,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Кунцевич",
+            "team": "fk-vitebsk",
+            "birth_date": "2006-01-02",
+            "position": "def",
+            "player_number": 53,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Эгуэдегу",
+            "surname": "Маглуар",
+            "team": "fk-vitebsk",
+            "birth_date": "2006-07-22",
+            "position": "def",
+            "player_number": 24,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Ян",
+            "surname": "Мосесов",
+            "team": "fk-vitebsk",
+            "birth_date": "2000-11-30",
+            "position": "def",
+            "player_number": 8,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Наумов",
+            "team": "fk-vitebsk",
+            "birth_date": "1989-01-22",
+            "position": "def",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Джавохир",
+            "surname": "О'тамуродов",
+            "team": "fk-vitebsk",
+            "birth_date": "2004-04-12",
+            "position": "def",
+            "player_number": 93,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Юрий",
+            "surname": "Половинкин",
+            "team": "fk-vitebsk",
+            "birth_date": "2003-03-19",
+            "position": "def",
+            "player_number": 21,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Скитов",
+            "team": "fk-vitebsk",
+            "birth_date": "1990-10-30",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Михаил",
+            "surname": "Башилов",
+            "team": "fk-vitebsk",
+            "birth_date": "1993-07-10",
+            "position": "mid",
+            "player_number": 30,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Гирс",
+            "team": "fk-vitebsk",
+            "birth_date": "1997-02-11",
+            "position": "mid",
+            "player_number": 55,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Дробыш",
+            "team": "fk-vitebsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вепа",
+            "surname": "Жумаев",
+            "team": "fk-vitebsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 3,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Краснов",
+            "team": "fk-vitebsk",
+            "birth_date": "1998-01-01",
+            "position": "mid",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роман",
+            "surname": "Лисовский",
+            "team": "fk-vitebsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Новых",
+            "team": "fk-vitebsk",
+            "birth_date": "2006-01-01",
+            "position": "mid",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Фрол",
+            "surname": "Панарин",
+            "team": "fk-vitebsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Ян",
+            "surname": "Скибски",
+            "team": "fk-vitebsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 18,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Ткаченко",
+            "team": "fk-vitebsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 25,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владлен",
+            "surname": "Аникеев",
+            "team": "fk-vitebsk",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Карен",
+            "surname": "Варданян",
+            "team": "fk-vitebsk",
+            "birth_date": "2003-01-01",
+            "position": "fwd",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Вехтев",
+            "team": "fk-vitebsk",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Марк",
+            "surname": "Краснов",
+            "team": "fk-vitebsk",
+            "birth_date": "1995-01-01",
+            "position": "fwd",
+            "player_number": 37,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Руслан",
+            "surname": "Теверов",
+            "team": "fk-vitebsk",
+            "birth_date": "1994-01-01",
+            "position": "fwd",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Захар",
+            "surname": "Червяков",
+            "team": "fk-vitebsk",
+            "birth_date": "2002-01-01",
+            "position": "fwd",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Гутор",
+            "team": "fc-minsk",
+            "birth_date": "1989-01-01",
+            "position": "gkp",
+            "player_number": 30,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Азарко",
+            "team": "fc-minsk",
+            "birth_date": "2002-01-01",
+            "position": "gkp",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Матвей",
+            "surname": "Сухаренко",
+            "team": "fc-minsk",
+            "birth_date": "2004-01-01",
+            "position": "gkp",
+            "player_number": 37,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Шпаковский",
+            "team": "fc-minsk",
+            "birth_date": "2001-01-01",
+            "position": "gkp",
+            "player_number": 92,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Валерий",
+            "surname": "Бондаренко",
+            "team": "fc-minsk",
+            "birth_date": "1994-01-01",
+            "position": "def",
+            "player_number": 83,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Грекович",
+            "team": "fc-minsk",
+            "birth_date": "2005-01-01",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Глеб",
+            "surname": "Гурбан",
+            "team": "fc-minsk",
+            "birth_date": "2001-01-01",
+            "position": "def",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Валентин",
+            "surname": "Дихтиевский",
+            "team": "fc-minsk",
+            "birth_date": "2003-01-01",
+            "position": "def",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Эдуард",
+            "surname": "Жевнеров",
+            "team": "fc-minsk",
+            "birth_date": "1987-01-01",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Глеб",
+            "surname": "Кривцов",
+            "team": "fc-minsk",
+            "birth_date": "2003-01-01",
+            "position": "def",
+            "player_number": 44,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Огнен",
+            "surname": "Мажич",
+            "team": "fc-minsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 3,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Михаленко",
+            "team": "fc-minsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 18,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Михаил",
+            "surname": "Бондаренко",
+            "team": "fc-minsk",
+            "birth_date": "2005-01-01",
+            "position": "fwd",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Варакса",
+            "team": "fc-minsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 66,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Васильев",
+            "team": "fc-minsk",
+            "birth_date": "1997-01-01",
+            "position": "mid",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Денисенко",
+            "team": "fc-minsk",
+            "birth_date": "2006-01-01",
+            "position": "mid",
+            "player_number": 80,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Мустафа",
+            "surname": "Джимет",
+            "team": "fc-minsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 71,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Даниил",
+            "surname": "Душевский",
+            "team": "fc-minsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 76,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Забелин",
+            "team": "fc-minsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Земко",
+            "team": "fc-minsk",
+            "birth_date": "1996-01-01",
+            "position": "mid",
+            "player_number": 6,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Семён",
+            "surname": "Пьянчук",
+            "team": "fc-minsk",
+            "birth_date": "2001-01-01",
+            "position": "fwd",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Тимофей",
+            "surname": "Симаненко",
+            "team": "fc-minsk",
+            "birth_date": "2006-01-01",
+            "position": "fwd",
+            "player_number": 35,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Сергей",
+            "surname": "Игнатович",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1992-01-01",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Игорь",
+            "surname": "Малашицки",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2002-01-01",
+            "position": "gkp",
+            "player_number": 35,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Сергей",
+            "surname": "Черник",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1988-01-01",
+            "position": "gkp",
+            "player_number": 32,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Баранок",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "def",
+            "player_number": 42,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Гружевский",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2000-01-01",
+            "position": "def",
+            "player_number": 12,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Лукашевич",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Макаренко",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Мартинкевич",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "def",
+            "player_number": 87,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Свириденко",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Семен",
+            "surname": "Шестиловский",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1994-01-01",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Шуляк",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Янковский",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1999-01-01",
+            "position": "def",
+            "player_number": 80,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Валон",
+            "surname": "Ахмеди",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1994-01-01",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Бурко",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Зенков",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 99,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Кабышев",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2001-01-01",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Капленко",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "1995-01-01",
+            "position": "mid",
+            "player_number": 55,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Ковалевич",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 88,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Ковалевич",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Николай",
+            "surname": "Сотников",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2005-01-01",
+            "position": "mid",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Алексей",
+            "surname": "Гарост",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 89,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Гривенев",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2006-01-01",
+            "position": "fwd",
+            "player_number": 71,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Денисюк",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2005-01-01",
+            "position": "fwd",
+            "player_number": 49,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Георгий",
+            "surname": "Кукушкин",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2006-01-01",
+            "position": "fwd",
+            "player_number": 90,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вячеслав",
+            "surname": "Пригодич",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Станислав",
+            "surname": "Стефанович",
+            "team": "shakhtyor-soligorsk",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Наумович",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2001-01-01",
+            "position": "gk",
+            "player_number": 71,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Сай",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1996-01-01",
+            "position": "gk",
+            "player_number": 16,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Алексей",
+            "surname": "Харитонович",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1995-01-01",
+            "position": "gk",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Хетаг",
+            "surname": "Бадоев",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1999-01-01",
+            "position": "def",
+            "player_number": 79,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Доминик",
+            "surname": "Динга",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 6,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Драбатович",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "def",
+            "player_number": 88,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Ковш",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2004-01-01",
+            "position": "def",
+            "player_number": 36,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Кучинский",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1996-01-01",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Лебедев",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1991-01-01",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артемий",
+            "surname": "Литвинов",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2004-01-01",
+            "position": "def",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Анатолий",
+            "surname": "Санников",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2004-01-01",
+            "position": "def",
+            "player_number": 44,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Игнат",
+            "surname": "Сидор",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 21,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Щадин",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1992-01-01",
+            "position": "def",
+            "player_number": 92,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Мидо",
+            "surname": "Ялле",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Марат",
+            "surname": "Калинченко",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1999-01-01",
+            "position": "mid",
+            "player_number": 99,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Михаил",
+            "surname": "Колядко",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1988-01-01",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Кресс",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 52,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владимир",
+            "surname": "Марухин",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Некрасов",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Нижник",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 98,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Игнат",
+            "surname": "Пранович",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Антон",
+            "surname": "Сучков",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Антон",
+            "surname": "Суша",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 90,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Тамело",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1992-01-01",
+            "position": "mid",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Тихонов",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Георгий",
+            "surname": "Эрмиди",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2001-01-01",
+            "position": "mid",
+            "player_number": 33,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Арсен",
+            "surname": "Джиоев",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2002-01-01",
+            "position": "fwd",
+            "player_number": 31,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Житнев",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1990-01-01",
+            "position": "fwd",
+            "player_number": 41,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иосифат",
+            "surname": "Лопаго",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2002-01-01",
+            "position": "fwd",
+            "player_number": 91,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роман",
+            "surname": "Папарига",
+            "team": "naftan-novopolotsk",
+            "birth_date": "1999-01-01",
+            "position": "fwd",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Шедько",
+            "team": "naftan-novopolotsk",
+            "birth_date": "2003-01-01",
+            "position": "fwd",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Брановец",
+            "team": "fk-slutsk",
+            "birth_date": "2000-01-01",
+            "position": "gkp",
+            "player_number": 34,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Садовский",
+            "team": "fk-slutsk",
+            "birth_date": "1997-01-01",
+            "position": "gkp",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Шпаковский",
+            "team": "fk-slutsk",
+            "birth_date": "2001-01-01",
+            "position": "gkp",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Былинкин",
+            "team": "fk-slutsk",
+            "birth_date": "1999-01-01",
+            "position": "def",
+            "player_number": 86,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Карпеня",
+            "team": "fk-slutsk",
+            "birth_date": "2001-01-01",
+            "position": "def",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Ковалевич",
+            "team": "fk-slutsk",
+            "birth_date": "2000-01-01",
+            "position": "def",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Григорий",
+            "surname": "Мартьянов",
+            "team": "fk-slutsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Михнюк",
+            "team": "fk-slutsk",
+            "birth_date": "2003-01-01",
+            "position": "def",
+            "player_number": 26,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Рум",
+            "team": "fk-slutsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 73,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Алексей",
+            "surname": "Семенов",
+            "team": "fk-slutsk",
+            "birth_date": "2003-01-01",
+            "position": "def",
+            "player_number": 39,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Юрин",
+            "team": "fk-slutsk",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 16,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Алшаник",
+            "team": "fk-slutsk",
+            "birth_date": "1999-01-01",
+            "position": "mid",
+            "player_number": 50,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артур",
+            "surname": "Буньон",
+            "team": "fk-slutsk",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 90,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Дубинец",
+            "team": "fk-slutsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 69,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Курлович",
+            "team": "fk-slutsk",
+            "birth_date": "1992-01-01",
+            "position": "mid",
+            "player_number": 57,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Омельянчук",
+            "team": "fk-slutsk",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 61,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Сергей",
+            "surname": "Пушняков",
+            "team": "fk-slutsk",
+            "birth_date": "1993-01-01",
+            "position": "mid",
+            "player_number": 28,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Сергей",
+            "surname": "Русак",
+            "team": "fk-slutsk",
+            "birth_date": "1993-01-01",
+            "position": "mid",
+            "player_number": 8,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Михаил",
+            "surname": "Сачковский",
+            "team": "fk-slutsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 6,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Сычев",
+            "team": "fk-slutsk",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 99,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Тишуров",
+            "team": "fk-slutsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Цепенков",
+            "team": "fk-slutsk",
+            "birth_date": "2004-01-01",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Ярослав",
+            "surname": "Яроцкий",
+            "team": "fk-slutsk",
+            "birth_date": "1996-01-01",
+            "position": "mid",
+            "player_number": 33,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Арсений",
+            "surname": "Ачаповский",
+            "team": "fk-slutsk",
+            "birth_date": "2003-01-01",
+            "position": "fwd",
+            "player_number": 31,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роман",
+            "surname": "Грицкевич",
+            "team": "fk-slutsk",
+            "birth_date": "2008-01-01",
+            "position": "fwd",
+            "player_number": 59,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Мельников",
+            "team": "fk-slutsk",
+            "birth_date": "1997-01-01",
+            "position": "fwd",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Оральхан",
+            "surname": "Омиртаев",
+            "team": "fk-slutsk",
+            "birth_date": "1998-01-01",
+            "position": "fwd",
+            "player_number": 47,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Соловьев",
+            "team": "fk-slutsk",
+            "birth_date": "2006-01-01",
+            "position": "fwd",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Станислав",
+            "surname": "Клущук",
+            "team": "gomel",
+            "birth_date": "1999-01-01",
+            "position": "gkp",
+            "player_number": 44,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Олег",
+            "surname": "Ковалев",
+            "team": "gomel",
+            "birth_date": "1987-01-01",
+            "position": "gkp",
+            "player_number": 87,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Нечаев",
+            "team": "gomel",
+            "birth_date": "1994-01-01",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Дроздов",
+            "team": "gomel",
+            "birth_date": "2005-01-01",
+            "position": "def",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Игорь",
+            "surname": "Заяц",
+            "team": "gomel",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 16,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Сергей",
+            "surname": "Матвейчик",
+            "team": "gomel",
+            "birth_date": "1988-01-01",
+            "position": "def",
+            "player_number": 3,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Павел",
+            "surname": "Назаренко",
+            "team": "gomel",
+            "birth_date": "1995-01-01",
+            "position": "def",
+            "player_number": 91,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Ращеня",
+            "team": "gomel",
+            "birth_date": "1996-01-01",
+            "position": "def",
+            "player_number": 72,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Трояков",
+            "team": "gomel",
+            "birth_date": "1995-01-01",
+            "position": "def",
+            "player_number": 30,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Чаговец",
+            "team": "gomel",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 33,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Шевченко",
+            "team": "gomel",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Яцкевич",
+            "team": "gomel",
+            "birth_date": "1998-01-01",
+            "position": "def",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Фуркан",
+            "surname": "Акин",
+            "team": "gomel",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 54,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Алексей",
+            "surname": "Антилевский",
+            "team": "gomel",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 21,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Барсуков",
+            "team": "gomel",
+            "birth_date": "1989-01-01",
+            "position": "mid",
+            "player_number": 8,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роман",
+            "surname": "Давискиба",
+            "team": "gomel",
+            "birth_date": "2001-01-01",
+            "position": "mid",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Ермакович",
+            "team": "gomel",
+            "birth_date": "1999-01-01",
+            "position": "mid",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Мычёлкин",
+            "team": "gomel",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 49,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Некрасов",
+            "team": "gomel",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 96,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Потапенко",
+            "team": "gomel",
+            "birth_date": "1999-01-01",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Тимур",
+            "surname": "Пухов",
+            "team": "gomel",
+            "birth_date": "1998-01-01",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Рылах",
+            "team": "gomel",
+            "birth_date": "2002-01-01",
+            "position": "mid",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Антон",
+            "surname": "Семёнов",
+            "team": "gomel",
+            "birth_date": "2005-01-01",
+            "position": "mid",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Даниил",
+            "surname": "Силинский",
+            "team": "gomel",
+            "birth_date": "2000-01-01",
+            "position": "mid",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Абдулла",
+            "surname": "Фаваз",
+            "team": "gomel",
+            "birth_date": "2003-01-01",
+            "position": "mid",
+            "player_number": 99,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Нурымбет",
+            "surname": "Абинур",
+            "team": "gomel",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Лукуман",
+            "surname": "Алиу",
+            "team": "gomel",
+            "birth_date": "2003-01-01",
+            "position": "fwd",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Грищенко",
+            "team": "gomel",
+            "birth_date": "2001-01-01",
+            "position": "fwd",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Денис",
+            "surname": "Козловский",
+            "team": "gomel",
+            "birth_date": "1993-01-01",
+            "position": "fwd",
+            "player_number": 29,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Фернандо",
+            "surname": "Нето",
+            "team": "gomel",
+            "birth_date": "2003-01-01",
+            "position": "fwd",
+            "player_number": 71,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роди",
+            "surname": "Эффаге",
+            "team": "gomel",
+            "birth_date": "2004-01-01",
+            "position": "fwd",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Азарко",
+            "team": "fc-smorgon",
+            "birth_date": "2001-01-01",
+            "position": "gkp",
+            "player_number": 12,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Новичков",
+            "team": "fc-smorgon",
+            "birth_date": "2002-02-02",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Павел",
+            "surname": "Охремчук",
+            "team": "fc-smorgon",
+            "birth_date": "1993-03-03",
+            "position": "gkp",
+            "player_number": 52,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Микаэль",
+            "surname": "Аскаров",
+            "team": "fc-smorgon",
+            "birth_date": "2002-04-04",
+            "position": "def",
+            "player_number": 72,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Глотко",
+            "team": "fc-smorgon",
+            "birth_date": "2003-05-05",
+            "position": "def",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кристиан",
+            "surname": "Интсоен",
+            "team": "fc-smorgon",
+            "birth_date": "1998-06-06",
+            "position": "def",
+            "player_number": 3,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Илья",
+            "surname": "Коваль",
+            "team": "fc-smorgon",
+            "birth_date": "1997-07-07",
+            "position": "def",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Виталий",
+            "surname": "Лихтин",
+            "team": "fc-smorgon",
+            "birth_date": "1994-08-08",
+            "position": "def",
+            "player_number": 30,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Терентий",
+            "surname": "Луцевич",
+            "team": "fc-smorgon",
+            "birth_date": "1990-09-09",
+            "position": "def",
+            "player_number": 44,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Джон",
+            "surname": "Нанимато",
+            "team": "fc-smorgon",
+            "birth_date": "2000-10-10",
+            "position": "def",
+            "player_number": 24,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+       {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Станкевич",
+            "team": "fc-smorgon",
+            "birth_date": "1993-01-01",
+            "position": "def",
+            "player_number": 71,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Абдул Азиз",
+            "surname": "Туре",
+            "team": "fc-smorgon",
+            "birth_date": "2002-02-02",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Алексей",
+            "surname": "Шалашников",
+            "team": "fc-smorgon",
+            "birth_date": "2002-03-03",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Шубович",
+            "team": "fc-smorgon",
+            "birth_date": "2000-04-04",
+            "position": "def",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Яблонский",
+            "team": "fc-smorgon",
+            "birth_date": "1996-05-05",
+            "position": "def",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Мохамед",
+            "surname": "Бамба",
+            "team": "fc-smorgon",
+            "birth_date": "2005-06-06",
+            "position": "mid",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Гаевой",
+            "team": "fc-smorgon",
+            "birth_date": "2002-07-07",
+            "position": "mid",
+            "player_number": 27,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Павел",
+            "surname": "Горбач",
+            "team": "fc-smorgon",
+            "birth_date": "2000-08-08",
+            "position": "mid",
+            "player_number": 23,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Матвей",
+            "surname": "Дуксо",
+            "team": "fc-smorgon",
+            "birth_date": "2003-09-09",
+            "position": "mid",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Ямусса",
+            "surname": "Камара",
+            "team": "fc-smorgon",
+            "birth_date": "1999-01-01",
+            "position": "mid",
+            "player_number": 89,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Альберт",
+            "surname": "Копытич",
+            "team": "fc-smorgon",
+            "birth_date": "2002-02-02",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артур",
+            "surname": "Кузмич",
+            "team": "fc-smorgon",
+            "birth_date": "2003-03-03",
+            "position": "mid",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Левковец",
+            "team": "fc-smorgon",
+            "birth_date": "1996-04-04",
+            "position": "mid",
+            "player_number": 39,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Леонович",
+            "team": "fc-smorgon",
+            "birth_date": "1998-05-05",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Павел",
+            "surname": "Селезнев",
+            "team": "fc-smorgon",
+            "birth_date": "1999-06-06",
+            "position": "mid",
+            "player_number": 6,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артур",
+            "surname": "Тишко",
+            "team": "fc-smorgon",
+            "birth_date": "1996-07-07",
+            "position": "mid",
+            "player_number": 78,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Лукуман",
+            "surname": "Алиу",
+            "team": "fc-smorgon",
+            "birth_date": "2003-08-08",
+            "position": "fwd",
+            "player_number": 25,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Раян",
+            "surname": "Гиберо",
+            "team": "fc-smorgon",
+            "birth_date": "2004-09-09",
+            "position": "fwd",
+            "player_number": 19,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Владислав",
+            "surname": "Далидович",
+            "team": "fc-smorgon",
+            "birth_date": "2004-10-10",
+            "position": "fwd",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Матвей",
+            "surname": "Коврук",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2005-01-01",
+            "position": "gkp",
+            "player_number": 50,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Максим",
+            "surname": "Плотников",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1998-02-02",
+            "position": "gkp",
+            "player_number": 49,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Санко",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1999-03-03",
+            "position": "gkp",
+            "player_number": 1,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Сороко",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1992-04-04",
+            "position": "gkp",
+            "player_number": 30,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Арсений",
+            "surname": "Агеев",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2004-05-05",
+            "position": "def",
+            "player_number": 66,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Роман",
+            "surname": "Вегеря",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2000-06-06",
+            "position": "def",
+            "player_number": 55,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Кирилл",
+            "surname": "Волков",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2006-07-07",
+            "position": "def",
+            "player_number": 14,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Эдуард",
+            "surname": "Жевнеров",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1987-08-08",
+            "position": "def",
+            "player_number": 5,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Лутик",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2002-09-09",
+            "position": "def",
+            "player_number": 17,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Милютин",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2002-10-10",
+            "position": "def",
+            "player_number": 4,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Погостнов",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2004-11-11",
+            "position": "def",
+            "player_number": 59,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Позняк",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1993-12-12",
+            "position": "def",
+            "player_number": 72,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Аттила",
+            "surname": "Фрейра",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2002-01-01",
+            "position": "def",
+            "player_number": 22,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Чиж",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1997-01-01",
+            "position": "def",
+            "player_number": 2,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Эдгар",
+            "surname": "Андре",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1998-02-02",
+            "position": "mid",
+            "player_number": 20,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Вадим",
+            "surname": "Арутюнян",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2005-03-03",
+            "position": "mid",
+            "player_number": 8,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Станислав",
+            "surname": "Атрашкевич",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2002-04-04",
+            "position": "mid",
+            "player_number": 80,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Егор",
+            "surname": "Бабич",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2001-05-05",
+            "position": "mid",
+            "player_number": 15,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Данила",
+            "surname": "Годяев",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2004-06-06",
+            "position": "mid",
+            "player_number": 47,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Никита",
+            "surname": "Ершов",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2002-07-07",
+            "position": "mid",
+            "player_number": 90,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Фред",
+            "surname": "Жуниор",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1998-08-08",
+            "position": "mid",
+            "player_number": 7,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Андрей",
+            "surname": "Левковец",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1996-09-09",
+            "position": "mid",
+            "player_number": 10,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Юрий",
+            "surname": "Ловец",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1996-10-10",
+            "position": "mid",
+            "player_number": 11,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Иван",
+            "surname": "Орешкевич",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2005-11-11",
+            "position": "mid",
+            "player_number": 13,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Евгений",
+            "surname": "Сакута",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2000-12-12",
+            "position": "mid",
+            "player_number": 77,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Скшинецкий",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "1990-01-01",
+            "position": "mid",
+            "player_number": 51,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Матвей",
+            "surname": "Герасимов",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2001-02-02",
+            "position": "fwd",
+            "player_number": 39,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Александр",
+            "surname": "Казаков",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2005-03-03",
+            "position": "fwd",
+            "player_number": 21,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Дмитрий",
+            "surname": "Матяш",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2000-04-04",
+            "position": "fwd",
+            "player_number": 25,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Руслан",
+            "surname": "Мялковский",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2006-05-05",
+            "position": "fwd",
+            "player_number": 9,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Артем",
+            "surname": "Петренко",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2000-06-06",
+            "position": "fwd",
+            "player_number": 34,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    },
+    {
+        "model": "player.Player",
+        "fields": {
+            "name": "Глеб",
+            "surname": "Пригодский",
+            "team": "arsenal-dzerzhinsk",
+            "birth_date": "2007-07-07",
+            "position": "fwd",
+            "player_number": 29,
+            "created_at": "2024-01-01T00:00:00+03:00",
+            "updated_at": "2024-01-01T00:00:00+03:00"
+        }
+    }
+]
