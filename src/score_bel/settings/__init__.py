@@ -21,11 +21,10 @@ sys.path.append(BASE_DIR)
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY', default='w7rgREGGRW78te4RG#7e4g$rg45EW')
+SECRET_KEY = env('SECRET_KEY', default='frgewqeetrebtrekrwm')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=True)
-
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=[])
 CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=[])
 
